@@ -1,0 +1,72 @@
+-- --------------------------------------------------------------------------------
+-- Company : Rochester Institute of Technology (RIT )
+-- Engineer : Rohan Patil (rnp5285@rit.edu)
+--
+-- Create Date : 2/19/19
+-- Design Name : fetch_tb
+-- Module Name : fetch_tb - behavioral
+-- Project Name : ex3
+-- Target Devices : Basys3
+--
+-- Description : instruction fetch testbench  
+-- --------------------------------------------------------------------------------
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+use IEEE.NUMERIC_STD.ALL;
+use IEEE.MATH_REAL.ALL;
+
+entity fetch_tb is
+end fetch_tb;
+
+architecture behav of fetch_tb is
+    component instr_fetch is
+        port (
+                jumpAddr,pcSrc : in std_logic_vector(27 downto 0);
+                jump,clk,rst : in std_logic;
+                pcNext : out std_logic_vector(27 downto 0);
+                instruction : out std_logic_vector(31 downto 0)
+        );
+    end component;
+    
+    -- instantiate constants and signals
+    constant delay : time := 125 ns;
+    constant clkperiod : time := 70 ns;
+    signal jumpAddr,pcSrc,pcNext : std_logic_vector(27 downto 0) := (others => '0');
+    signal instruction : std_logic_vector(31 downto 0) := (others => '0');
+    signal jump,clk,rst : std_logic := '0';
+begin
+    -- connect signals to inputs/outputs of component inst_fetch
+    instr_fetch_inst : instr_fetch
+        port map (
+            jumpAddr => jumpAddr,
+            pcSrc => pcSrc,
+            jump => jump,
+            clk => clk,
+            rst => rst,
+            pcNext => pcNext,
+            instruction => instruction
+        );
+        
+        clk <= not clk after clkperiod / 2; -- clock process
+        
+        process is 
+            begin
+                rst <= '0';
+                jump <= '0';
+                jumpAddr <= x"0000000";
+            for i in 0 to 4 loop
+                pcSrc <= std_logic_vector(to_unsigned(i,28));
+                wait for delay;
+            end loop;
+            jump <= '1';
+            wait for delay;
+            jumpAddr <= x"0000006";
+            wait for delay;
+            jump <= '0';
+            pcSrc <= x"0000005";
+            wait for delay;
+            wait;
+        end process;
+end behav;

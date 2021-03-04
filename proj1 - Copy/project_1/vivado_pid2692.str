@@ -1,0 +1,418 @@
+/*
+
+Vivado v2017.2 (64-bit)
+SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+
+Process ID: 2692
+License: Customer
+
+Current time: 	4/26/19 7:14:12 PM EDT
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 222 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2017.2/tps/win64/jre
+JVM executable location: 	C:/Xilinx/Vivado/2017.2/tps/win64/jre/bin/java.exe
+Java library paths: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o;C:/WINDOWS/Sun/Java/bin;C:/WINDOWS/system32;C:/WINDOWS;C:/Xilinx/Vivado/2017.2/bin;C:/Xilinx/Vivado/2017.2/lib/win64.o;C:/Xilinx/Vivado/2017.2/tps/win64/jre/bin/server;C:/Xilinx/Vivado/2017.2/tps/win64/jre/bin;C:/Xilinx/SDK/2017.2/bin;C:/Xilinx/Vivado/2017.2/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2017.2/ids_lite/ISE/lib/nt64;C:/Xilinx/Vivado_HLS/2017.2/bin;C:/Program Files (x86)/Common Files/Oracle/Java/javapath;C:/Program Files/Python36/Scripts/;C:/Program Files/Python36/;C:/WINDOWS/system32;C:/WINDOWS;C:/WINDOWS/System32/Wbem;C:/WINDOWS/System32/WindowsPowerShell/v1.0/;C:/Software/Cadence/SPB_16.6/tools/pcb/bin;C:/Software/Cadence/SPB_16.6/tools/bin;C:/Software/Cadence/SPB_16.6/tools/libutil/bin;C:/Software/Cadence/SPB_16.6/tools/fet/bin;C:/Software/Cadence/SPB_16.6/tools/specctra/bin;C:/Software/Cadence/SPB_16.6/tools/pspice;C:/Software/Cadence/SPB_16.6/tools/capture;C:/Software/Cadence/SPB_16.6/openaccess/bin/win32/opt;C:/Program Files/MiKTeX 2.9/miktex/bin/x64/;C:/WINDOWS/system32/config/systemprofile/.dnx/bin;C:/Program Files/Microsoft DNX/Dnvm/;C:/Program Files/Microsoft SQL Server/120/Tools/Binn/;C:/Program Files/Microsoft SQL Server/130/Tools/Binn/;C:/Program Files (x86)/Microsoft Emulator Manager/1.0/;C:/Program Files (x86)/nodejs/;C:/Program Files/Git/cmd;C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/;C:/Program Files/MATLAB/R2018a/runtime/win64;C:/Program Files/MATLAB/R2018a/bin;C:/Program Files/TortoiseSVN/bin;C:/Program Files/TortoiseGit/bin;C:/Program Files/PuTTY/;C:/Windows/CCM;C:/Users/cel8473/AppData/Local/Microsoft/WindowsApps;;C:/Xilinx/Vivado/2017.2/tps/mingw/6.2.0/win64.o/nt/bin;C:/Xilinx/Vivado/2017.2/tps/mingw/6.2.0/win64.o/nt/libexec/gcc/x86_64-w64-mingw32/6.2.0;.
+
+User name: 	cel8473
+User home directory: C:/Users/cel8473
+User working directory: D:/DSD-II/proj1/project_1
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2017.2
+RDI_DATADIR: C:/Xilinx/Vivado/2017.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2017.2/bin
+
+User preferences location: C:/Users/cel8473/AppData/Roaming/Xilinx/Vivado
+Vivado preferences directory: C:/Users/cel8473/AppData/Roaming/Xilinx/Vivado/2017.2/vivado.xml
+Vivado layouts directory: C:/Users/cel8473/AppData/Roaming/Xilinx/Vivado/2017.2/layouts
+PlanAhead jar location: 	C:/Xilinx/Vivado/2017.2/lib/classes/planAhead.jar
+Vivado Look & Feel: 	[Synthetica - the extended Synth Look and Feel. - ui.g.i.H]
+Engine tmp dir: 	D:/DSD-II/proj1/project_1/.Xil/Vivado-2692-FSL-04
+
+GUI allocated memory:	170 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 514 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 54 MB (+54375kb) [00:00:05]
+// [Engine Memory]: 437 MB (+306457kb) [00:00:05]
+// bs:g (cg:JFrame):  Open Project : addNotify
+// Opening Vivado Project: D:\DSD-II\proj1\project_1\project_1.xpr. Version: Vivado v2017.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project D:/DSD-II/proj1/project_1/project_1.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 509 MB (+52578kb) [00:00:08]
+// Tcl Message: open_project D:/DSD-II/proj1/project_1/project_1.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 58 MB (+1445kb) [00:00:09]
+// [Engine Memory]: 562 MB (+29052kb) [00:00:09]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 593 MB. GUI used memory: 42 MB. Current time: 4/26/19 7:14:15 PM EDT
+// Project name: project_1; location: D:/DSD-II/proj1/project_1; part: xc7a35tcpg236-1
+// [Engine Memory]: 593 MB (+2623kb) [00:00:11]
+// Tcl Message: open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 771.805 ; gain = 115.590 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+dismissDialog("Open Project"); // bs:g (cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u:M (JViewport:JComponent, cg:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e:bs (cg:JFrame):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// Tcl Message: launch_simulation 
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a:JButton (JPanel:JComponent, e:bs)
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'MIPS_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... 
+// Tcl Message: INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/DSD-II/proj1/project_1/project_1.sim/sim_1/behav' 
+// Tcl Message: "xvhdl -m64 --relax -prj MIPS_tb_vhdl.prj" 
+// [GUI Memory]: 63 MB (+1605kb) [00:00:28]
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '5' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/DSD-II/proj1/project_1/project_1.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds INFO: [USF-XSim-99] Step results log file:'D:/DSD-II/proj1/project_1/project_1.sim/sim_1/behav/elaborate.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/DSD-II/proj1/project_1/project_1.sim/sim_1/behav/elaborate.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 785.238 ; gain = 0.000 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// HOptionPane Error: 'ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  (Run Simulation)'
+dismissDialog("Run Simulation"); // e:bs (cg:JFrame)
+selectButton("RDIResource.ProgressDialog_ERROR_ENCOUNTERED_PLEASE_SEE_TCL_OK", "OK"); // JButton:AbstractButton (JPanel:JComponent, G:JDialog)
+// a:a (cg:JFrame): Critical Messages: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, a:a)
+dismissDialog("Critical Messages"); // a:a (cg:JFrame)
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aF:FrameContainer (ContainerContainer:JideSplitPane, cg:JFrame)
+// Elapsed time: 29 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MIPS(Behavioral) (microprocessor.vhd)]", 1); // B:i (D:JPanel, cg:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MIPS(Behavioral) (microprocessor.vhd)]", 1); // B:i (D:JPanel, cg:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 3); // B:i (D:JPanel, cg:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 4); // B:i (D:JPanel, cg:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, MIPS_tb(bench) (microprocessor_tb.vhd)]", 5); // B:i (D:JPanel, cg:JFrame)
+// PAPropertyPanels.initPanels (microprocessor_tb.vhd) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, MIPS_tb(bench) (microprocessor_tb.vhd)]", 5, true); // B:i (D:JPanel, cg:JFrame) - Node
+// [Engine Memory]: 623 MB (+1341kb) [00:01:08]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, MIPS_tb(bench) (microprocessor_tb.vhd)]", 5, true, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click - Node
+// [GUI Memory]: 69 MB (+3391kb) [00:01:13]
+selectCodeEditor("microprocessor_tb.vhd", 86, 232); // bI:J (JPanel:JComponent, cg:JFrame)
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 2000 ms.
+// [GUI Memory]: 73 MB (+492kb) [00:01:16]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u:M (JViewport:JComponent, cg:JFrame)
+// [GUI Memory]: 78 MB (+880kb) [00:01:18]
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation]", 5); // u:M (JViewport:JComponent, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation]", 5); // u:M (JViewport:JComponent, cg:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u:M (JViewport:JComponent, cg:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e:bs (cg:JFrame):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// Tcl Message: launch_simulation 
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a:JButton (JPanel:JComponent, e:bs)
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'MIPS_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/DSD-II/proj1/project_1/project_1.sim/sim_1/behav' 
+// Tcl Message: "xvhdl -m64 --relax -prj MIPS_tb_vhdl.prj" 
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '4' seconds INFO: [USF-XSim-99] Step results log file:'D:/DSD-II/proj1/project_1/project_1.sim/sim_1/behav/xvhdl.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'D:/DSD-II/proj1/project_1/project_1.sim/sim_1/behav/xvhdl.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 799.707 ; gain = 0.996 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// HOptionPane Error: 'ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  (Run Simulation)'
+dismissDialog("Run Simulation"); // e:bs (cg:JFrame)
+// [GUI Memory]: 87 MB (+5483kb) [00:01:29]
+selectButton("RDIResource.ProgressDialog_ERROR_ENCOUNTERED_PLEASE_SEE_TCL_OK", "OK"); // JButton:AbstractButton (JPanel:JComponent, G:JDialog)
+// a:a (cg:JFrame): Critical Messages: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, a:a)
+dismissDialog("Critical Messages"); // a:a (cg:JFrame)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 383, 79); // dv:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 383, 79, false, false, false, false, true); // dv:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("microprocessor_tb.vhd", 255, 210); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Command: 'rdi::info_commands {lau*}'
+// Tcl Command: 'rdi::info_commands {lau*}'
+// Tcl Command: 'rdi::info_commands {laun*}'
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "laun", true); // ak:X (Q:ag, cg:JFrame)
+applyEnter(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "launch_simulation"); // ak:X (Q:ag, cg:JFrame)
+// Tcl Command: 'launch_simulation'
+// Tcl Command: 'launch_simulation'
+// TclEventType: LAUNCH_SIM
+// Tcl Message: launch_simulation 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'MIPS_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... 
+// Tcl Message: INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/DSD-II/proj1/project_1/project_1.sim/sim_1/behav' 
+// bs:g (cg:JFrame):  Tcl Command Line : addNotify
+// Tcl Message: "xvhdl -m64 --relax -prj MIPS_tb_vhdl.prj" 
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a:JButton (JPanel:JComponent, bs:g)
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '3' seconds INFO: [USF-XSim-99] Step results log file:'D:/DSD-II/proj1/project_1/project_1.sim/sim_1/behav/xvhdl.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'D:/DSD-II/proj1/project_1/project_1.sim/sim_1/behav/xvhdl.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+dismissDialog("Tcl Command Line"); // bs:g (cg:JFrame)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 605, 40); // dv:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 605, 40, false, false, false, false, true); // dv:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("microprocessor_tb.vhd", 157, 366); // bI:J (JPanel:JComponent, cg:JFrame)
+// [GUI Memory]: 94 MB (+2816kb) [00:01:57]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation]", 2); // u:M (JViewport:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sim_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "launch_simulation", true); // ak:X (Q:ag, cg:JFrame)
+// Tcl Command: 'launch_simulation'
+// Tcl Command: 'launch_simulation'
+// TclEventType: LAUNCH_SIM
+// Tcl Message: launch_simulation 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'MIPS_tb' in fileset 'sim_1'... 
+// bs:g (cg:JFrame):  Tcl Command Line : addNotify
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... 
+// HMemoryUtils.trashcanNow. Engine heap size: 637 MB. GUI used memory: 43 MB. Current time: 4/26/19 7:16:14 PM EDT
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a:JButton (JPanel:JComponent, bs:g)
+// Tcl Message: INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/DSD-II/proj1/project_1/project_1.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/DSD-II/proj1/project_1/project_1.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: Vivado Simulator 2017.2 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved. Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto bf012efcabd8415187872d9e023a8601 --debug typical --relax --mt 2 -L secureip --snapshot MIPS_tb_behav xil_defaultlib.MIPS_tb -log elaborate.log  Using 2 slave threads. ERROR: [XSIM 43-3225] Cannot find design unit xil_defaultlib.MIPS_tb in library work located at xsim.dir/work. 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds INFO: [USF-XSim-99] Step results log file:'D:/DSD-II/proj1/project_1/project_1.sim/sim_1/behav/elaborate.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/DSD-II/proj1/project_1/project_1.sim/sim_1/behav/elaborate.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 805.430 ; gain = 2.875 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+dismissDialog("Tcl Command Line"); // bs:g (cg:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 19 seconds
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 497, 59); // dv:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 497, 59, false, false, false, false, true); // dv:J (JPanel:JComponent, cg:JFrame) - Double Click
+// Elapsed time: 14 seconds
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 562, 57); // dv:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 562, 57, false, false, false, false, true); // dv:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("microprocessor_tb.vhd", 303, 348); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "launch_simulation", true); // ak:X (Q:ag, cg:JFrame)
+// Tcl Command: 'launch_simulation'
+// Tcl Command: 'launch_simulation'
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'MIPS' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... 
+// Tcl Message: INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/DSD-II/proj1/project_1/project_1.sim/sim_1/behav' 
+// bs:g (cg:JFrame):  Tcl Command Line : addNotify
+// Tcl Message: "xvhdl -m64 --relax -prj MIPS_vhdl.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '4' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/DSD-II/proj1/project_1/project_1.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds INFO: [USF-XSim-99] Step results log file:'D:/DSD-II/proj1/project_1/project_1.sim/sim_1/behav/elaborate.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/DSD-II/proj1/project_1/project_1.sim/sim_1/behav/elaborate.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 807.809 ; gain = 0.000 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+dismissDialog("Tcl Command Line"); // bs:g (cg:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sim_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MIPS(Behavioral) (microprocessor.vhd)]", 1, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MIPS(Behavioral) (microprocessor.vhd)]", 1, true, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click - Node
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+selectCodeEditor("microprocessor.vhd", 56, 381); // bI:J (JPanel:JComponent, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MIPS(Behavioral) (microprocessor.vhd), sif : instr_fetch(structural) (instr_fetch.vhd)]", 2, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MIPS(Behavioral) (microprocessor.vhd), sif : instr_fetch(structural) (instr_fetch.vhd)]", 2, true, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "microprocessor.vhd", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("microprocessor.vhd", 91, 387); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "launch_simulation", true); // ak:X (Q:ag, cg:JFrame)
+// Tcl Command: 'launch_simulation'
+// Tcl Command: 'launch_simulation'
+// TclEventType: LAUNCH_SIM
+// Tcl Message: launch_simulation 
+// bs:g (cg:JFrame):  Tcl Command Line : addNotify
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'MIPS_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... 
+// Tcl Message: INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/DSD-II/proj1/project_1/project_1.sim/sim_1/behav' 
+// Tcl Message: "xvhdl -m64 --relax -prj MIPS_tb_vhdl.prj" 
+// Tcl Message: INFO: [VRFC 10-240] VHDL file D:/DSD-II/proj1/project_1/project_1.srcs/sim_1/new/microprocessor_tb.vhd ignored due to errors 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '4' seconds INFO: [USF-XSim-99] Step results log file:'D:/DSD-II/proj1/project_1/project_1.sim/sim_1/behav/xvhdl.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'D:/DSD-II/proj1/project_1/project_1.sim/sim_1/behav/xvhdl.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 808.641 ; gain = 0.066 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+dismissDialog("Tcl Command Line"); // bs:g (cg:JFrame)
+selectCodeEditor("microprocessor.vhd", 277, 382); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 21 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "jump_"); // l:X (ax:e, cg:JFrame)
+selectCodeEditor("microprocessor.vhd", 455, 465); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectButton(RDIResource.HCodeEditor_CLOSE, (String) null); // k:JideButton (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "launch_simulation", true); // ak:X (Q:ag, cg:JFrame)
+// Tcl Command: 'launch_simulation'
+// Tcl Command: 'launch_simulation'
+// TclEventType: LAUNCH_SIM
+// Tcl Message: launch_simulation 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'MIPS_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/DSD-II/proj1/project_1/project_1.sim/sim_1/behav' 
+// bs:g (cg:JFrame):  Tcl Command Line : addNotify
+// Tcl Message: "xvhdl -m64 --relax -prj MIPS_tb_vhdl.prj" 
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a:JButton (JPanel:JComponent, bs:g)
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '4' seconds INFO: [USF-XSim-99] Step results log file:'D:/DSD-II/proj1/project_1/project_1.sim/sim_1/behav/xvhdl.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'D:/DSD-II/proj1/project_1/project_1.sim/sim_1/behav/xvhdl.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 812.590 ; gain = 0.000 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+dismissDialog("Tcl Command Line"); // bs:g (cg:JFrame)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 304, 59); // dv:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 304, 59, false, false, false, false, true); // dv:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "microprocessor_tb.vhd", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking too long to process. Increasing delay to 6000 ms.
+// Elapsed time: 11 seconds
+selectCodeEditor("microprocessor_tb.vhd", 286, 277); // bI:J (JPanel:JComponent, cg:JFrame)
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 4000 ms.
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "launch_simulation", true); // ak:X (Q:ag, cg:JFrame)
+// Tcl Command: 'launch_simulation'
+// Tcl Command: 'launch_simulation'
+// TclEventType: LAUNCH_SIM
+// Tcl Message: launch_simulation 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'MIPS_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/DSD-II/proj1/project_1/project_1.sim/sim_1/behav' 
+// bs:g (cg:JFrame):  Tcl Command Line : addNotify
+// Tcl Message: "xvhdl -m64 --relax -prj MIPS_tb_vhdl.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '5' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/DSD-II/proj1/project_1/project_1.sim/sim_1/behav' 
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a:JButton (JPanel:JComponent, bs:g)
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds INFO: [USF-XSim-99] Step results log file:'D:/DSD-II/proj1/project_1/project_1.sim/sim_1/behav/elaborate.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/DSD-II/proj1/project_1/project_1.sim/sim_1/behav/elaborate.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 812.590 ; gain = 0.000 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+dismissDialog("Tcl Command Line"); // bs:g (cg:JFrame)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 411, 45); // dv:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 411, 45, false, false, false, false, true); // dv:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MIPS(Behavioral) (microprocessor.vhd), id : instr_decode(behav) (instr_decode.vhd)]", 8, false); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MIPS(Behavioral) (microprocessor.vhd), id : instr_decode(behav) (instr_decode.vhd)]", 8, false, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click
+selectCodeEditor("instr_decode.vhd", 120, 196); // bI:J (JPanel:JComponent, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "microprocessor.vhd", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// [GUI Memory]: 100 MB (+1019kb) [00:05:29]
+selectCodeEditor("microprocessor.vhd", 91, 300); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("microprocessor.vhd", 136, 177); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u:M (JViewport:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis]", 3); // u:M (JViewport:JComponent, cg:JFrame)
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u:M (JViewport:JComponent, cg:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e:bs (cg:JFrame):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// Tcl Message: launch_simulation 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'MIPS_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/DSD-II/proj1/project_1/project_1.sim/sim_1/behav' 
+// Tcl Message: "xvhdl -m64 --relax -prj MIPS_tb_vhdl.prj" 
+// Tcl Message: run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 820.332 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '5' seconds INFO: [USF-XSim-99] Step results log file:'D:/DSD-II/proj1/project_1/project_1.sim/sim_1/behav/xvhdl.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'D:/DSD-II/proj1/project_1/project_1.sim/sim_1/behav/xvhdl.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 820.332 ; gain = 0.000 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// HOptionPane Error: 'ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  (Run Simulation)'
+// 'd' command handler elapsed time: 9 seconds
+selectButton("RDIResource.ProgressDialog_ERROR_ENCOUNTERED_PLEASE_SEE_TCL_OK", "OK"); // JButton:AbstractButton (JPanel:JComponent, G:JDialog)
+// a:a (cg:JFrame): Critical Messages: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, a:a)
+dismissDialog("Critical Messages"); // a:a (cg:JFrame)
+// Elapsed time: 13 seconds
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 485, 42); // dv:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 485, 42, false, false, false, false, true); // dv:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("microprocessor.vhd", 605, 371); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "microprocessor.vhd", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "instr_fetch.vhd", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("instr_fetch.vhd", 394, 107); // bI:J (JPanel:JComponent, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "microprocessor.vhd", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "instr_decode.vhd", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // A:b
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // A:b
+// TclEventType: DG_GRAPH_GENERATED
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "microprocessor_tb.vhd", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("microprocessor_tb.vhd", 756, 271); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("microprocessor_tb.vhd", 337, 442); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+typeControlKey((HResource) null, "microprocessor_tb.vhd", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "microprocessor.vhd", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 248 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cg:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cg:JFrame)

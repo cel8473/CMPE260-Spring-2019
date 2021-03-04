@@ -1,0 +1,602 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Fri Apr 26 19:13:58 2019
+# Process ID: 2692
+# Current directory: D:/DSD-II/proj1/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7728 D:\DSD-II\proj1\project_1\project_1.xpr
+# Log file: D:/DSD-II/proj1/project_1/vivado.log
+# Journal file: D:/DSD-II/proj1/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/DSD-II/proj1/project_1/project_1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 771.805 ; gain = 115.590
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'MIPS_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/DSD-II/proj1/project_1/project_1.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj MIPS_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/ALU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALU
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity adder
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/andN.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity andN
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/data_mem.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity data_mem
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/execute.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity execute
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/fa.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity fa
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/instr_decode.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity instr_decode
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/instr_fetch.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity instr_fetch
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/instr_mem.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity instr_mem
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/mem_stage.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mem_stage
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/project_1/project_1.srcs/sources_1/new/microprocessor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MIPS
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/multiU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity multU
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/mux.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mux
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/orN.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity orN
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/pc_reg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity pc_reg
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/register_file.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity register_file
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/ripplecarry_fa.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ripplecarry_fa
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/sllN.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sllN
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/sraN.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sraN
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/srlN.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity srlN
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/wb_stage.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity wb_stage
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/xorN.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity xorN
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/project_1/project_1.srcs/sim_1/new/microprocessor_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MIPS_tb
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/DSD-II/proj1/project_1/project_1.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto bf012efcabd8415187872d9e023a8601 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot MIPS_tb_behav xil_defaultlib.MIPS_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-718] formal port <wixtest> does not exist in entity <MIPS>.  Please compare the definition of block <MIPS> to its component declaration and its instantion to detect the mismatch. [D:/DSD-II/proj1/project_1/project_1.srcs/sim_1/new/microprocessor_tb.vhd:26]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit mips_tb in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/DSD-II/proj1/project_1/project_1.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/DSD-II/proj1/project_1/project_1.sim/sim_1/behav/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 785.238 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'MIPS_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/DSD-II/proj1/project_1/project_1.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj MIPS_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/ALU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALU
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity adder
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/andN.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity andN
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/data_mem.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity data_mem
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/execute.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity execute
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/fa.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity fa
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/instr_decode.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity instr_decode
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/instr_fetch.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity instr_fetch
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/instr_mem.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity instr_mem
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/mem_stage.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mem_stage
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/project_1/project_1.srcs/sources_1/new/microprocessor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MIPS
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/multiU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity multU
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/mux.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mux
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/orN.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity orN
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/pc_reg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity pc_reg
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/register_file.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity register_file
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/ripplecarry_fa.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ripplecarry_fa
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/sllN.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sllN
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/sraN.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sraN
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/srlN.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity srlN
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/wb_stage.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity wb_stage
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/xorN.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity xorN
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/project_1/project_1.srcs/sim_1/new/microprocessor_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MIPS_tb
+ERROR: [VRFC 10-1412] syntax error near ) [D:/DSD-II/proj1/project_1/project_1.srcs/sim_1/new/microprocessor_tb.vhd:27]
+ERROR: [VRFC 10-47] rstn is already declared in this region [D:/DSD-II/proj1/project_1/project_1.srcs/sim_1/new/microprocessor_tb.vhd:31]
+ERROR: [VRFC 10-1412] syntax error near begin [D:/DSD-II/proj1/project_1/project_1.srcs/sim_1/new/microprocessor_tb.vhd:36]
+ERROR: [VRFC 10-77] mips is not a type [D:/DSD-II/proj1/project_1/project_1.srcs/sim_1/new/microprocessor_tb.vhd:38]
+ERROR: [VRFC 10-91] rstn is not declared [D:/DSD-II/proj1/project_1/project_1.srcs/sim_1/new/microprocessor_tb.vhd:45]
+ERROR: [VRFC 10-1412] syntax error near wait [D:/DSD-II/proj1/project_1/project_1.srcs/sim_1/new/microprocessor_tb.vhd:46]
+ERROR: [VRFC 10-91] clock_period is not declared [D:/DSD-II/proj1/project_1/project_1.srcs/sim_1/new/microprocessor_tb.vhd:46]
+ERROR: [VRFC 10-91] rstn is not declared [D:/DSD-II/proj1/project_1/project_1.srcs/sim_1/new/microprocessor_tb.vhd:47]
+ERROR: [VRFC 10-1412] syntax error near wait [D:/DSD-II/proj1/project_1/project_1.srcs/sim_1/new/microprocessor_tb.vhd:48]
+ERROR: [VRFC 10-91] clock_period is not declared [D:/DSD-II/proj1/project_1/project_1.srcs/sim_1/new/microprocessor_tb.vhd:48]
+ERROR: [VRFC 10-91] clkin is not declared [D:/DSD-II/proj1/project_1/project_1.srcs/sim_1/new/microprocessor_tb.vhd:58]
+ERROR: [VRFC 10-91] clock_period is not declared [D:/DSD-II/proj1/project_1/project_1.srcs/sim_1/new/microprocessor_tb.vhd:59]
+ERROR: [VRFC 10-2123] 0 definitions of operator "/" match here [D:/DSD-II/proj1/project_1/project_1.srcs/sim_1/new/microprocessor_tb.vhd:59]
+ERROR: [VRFC 10-91] clkin is not declared [D:/DSD-II/proj1/project_1/project_1.srcs/sim_1/new/microprocessor_tb.vhd:60]
+ERROR: [VRFC 10-91] clock_period is not declared [D:/DSD-II/proj1/project_1/project_1.srcs/sim_1/new/microprocessor_tb.vhd:61]
+ERROR: [VRFC 10-2123] 0 definitions of operator "/" match here [D:/DSD-II/proj1/project_1/project_1.srcs/sim_1/new/microprocessor_tb.vhd:61]
+ERROR: [VRFC 10-1504] unit bench ignored due to previous errors [D:/DSD-II/proj1/project_1/project_1.srcs/sim_1/new/microprocessor_tb.vhd:21]
+INFO: [VRFC 10-240] VHDL file D:/DSD-II/proj1/project_1/project_1.srcs/sim_1/new/microprocessor_tb.vhd ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/DSD-II/proj1/project_1/project_1.sim/sim_1/behav/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'D:/DSD-II/proj1/project_1/project_1.sim/sim_1/behav/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 799.707 ; gain = 0.996
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'MIPS_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/DSD-II/proj1/project_1/project_1.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj MIPS_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/ALU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALU
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity adder
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/andN.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity andN
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/data_mem.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity data_mem
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/execute.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity execute
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/fa.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity fa
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/instr_decode.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity instr_decode
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/instr_fetch.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity instr_fetch
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/instr_mem.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity instr_mem
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/mem_stage.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mem_stage
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/project_1/project_1.srcs/sources_1/new/microprocessor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MIPS
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/multiU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity multU
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/mux.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mux
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/orN.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity orN
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/pc_reg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity pc_reg
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/register_file.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity register_file
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/ripplecarry_fa.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ripplecarry_fa
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/sllN.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sllN
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/sraN.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sraN
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/srlN.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity srlN
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/wb_stage.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity wb_stage
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/xorN.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity xorN
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/project_1/project_1.srcs/sim_1/new/microprocessor_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MIPS_tb
+ERROR: [VRFC 10-719] formal port/generic <wixtest> is not declared in <mips> [D:/DSD-II/proj1/project_1/project_1.srcs/sim_1/new/microprocessor_tb.vhd:40]
+ERROR: [VRFC 10-1504] unit bench ignored due to previous errors [D:/DSD-II/proj1/project_1/project_1.srcs/sim_1/new/microprocessor_tb.vhd:21]
+INFO: [VRFC 10-240] VHDL file D:/DSD-II/proj1/project_1/project_1.srcs/sim_1/new/microprocessor_tb.vhd ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/DSD-II/proj1/project_1/project_1.sim/sim_1/behav/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'D:/DSD-II/proj1/project_1/project_1.sim/sim_1/behav/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'MIPS_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/DSD-II/proj1/project_1/project_1.sim/sim_1/behav'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/DSD-II/proj1/project_1/project_1.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto bf012efcabd8415187872d9e023a8601 --debug typical --relax --mt 2 -L secureip --snapshot MIPS_tb_behav xil_defaultlib.MIPS_tb -log elaborate.log 
+Using 2 slave threads.
+ERROR: [XSIM 43-3225] Cannot find design unit xil_defaultlib.MIPS_tb in library work located at xsim.dir/work.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/DSD-II/proj1/project_1/project_1.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/DSD-II/proj1/project_1/project_1.sim/sim_1/behav/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 805.430 ; gain = 2.875
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'MIPS' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/DSD-II/proj1/project_1/project_1.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj MIPS_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/ALU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALU
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity adder
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/andN.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity andN
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/data_mem.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity data_mem
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/execute.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity execute
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/fa.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity fa
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/instr_decode.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity instr_decode
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/instr_fetch.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity instr_fetch
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/instr_mem.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity instr_mem
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/mem_stage.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mem_stage
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/multiU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity multU
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/mux.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mux
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/orN.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity orN
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/pc_reg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity pc_reg
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/register_file.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity register_file
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/ripplecarry_fa.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ripplecarry_fa
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/sllN.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sllN
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/sraN.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sraN
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/srlN.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity srlN
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/wb_stage.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity wb_stage
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/xorN.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity xorN
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/project_1/project_1.srcs/sources_1/new/microprocessor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MIPS
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/DSD-II/proj1/project_1/project_1.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto bf012efcabd8415187872d9e023a8601 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot MIPS_behav xil_defaultlib.MIPS -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-718] formal port <jump_addr> does not exist in entity <instr_fetch>.  Please compare the definition of block <instr_fetch> to its component declaration and its instantion to detect the mismatch. [D:/DSD-II/proj1/project_1/project_1.srcs/sources_1/new/microprocessor.vhd:56]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit mips in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/DSD-II/proj1/project_1/project_1.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/DSD-II/proj1/project_1/project_1.sim/sim_1/behav/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 807.809 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'MIPS_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/DSD-II/proj1/project_1/project_1.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj MIPS_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/ALU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALU
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity adder
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/andN.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity andN
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/data_mem.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity data_mem
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/execute.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity execute
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/fa.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity fa
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/instr_decode.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity instr_decode
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/instr_fetch.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity instr_fetch
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/instr_mem.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity instr_mem
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/mem_stage.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mem_stage
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/project_1/project_1.srcs/sources_1/new/microprocessor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MIPS
+ERROR: [VRFC 10-719] formal port/generic <jump_addr> is not declared in <instr_fetch> [D:/DSD-II/proj1/project_1/project_1.srcs/sources_1/new/microprocessor.vhd:190]
+ERROR: [VRFC 10-704] formal jumpaddr has no actual or default value [D:/DSD-II/proj1/project_1/project_1.srcs/sources_1/new/microprocessor.vhd:190]
+ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [D:/DSD-II/proj1/project_1/project_1.srcs/sources_1/new/microprocessor.vhd:24]
+INFO: [VRFC 10-240] VHDL file D:/DSD-II/proj1/project_1/project_1.srcs/sources_1/new/microprocessor.vhd ignored due to errors
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/multiU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity multU
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/mux.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mux
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/orN.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity orN
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/pc_reg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity pc_reg
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/register_file.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity register_file
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/ripplecarry_fa.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ripplecarry_fa
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/sllN.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sllN
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/sraN.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sraN
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/srlN.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity srlN
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/wb_stage.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity wb_stage
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/xorN.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity xorN
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/project_1/project_1.srcs/sim_1/new/microprocessor_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MIPS_tb
+ERROR: [VRFC 10-1412] syntax error near ) [D:/DSD-II/proj1/project_1/project_1.srcs/sim_1/new/microprocessor_tb.vhd:41]
+ERROR: [VRFC 10-704] formal clkin has no actual or default value [D:/DSD-II/proj1/project_1/project_1.srcs/sim_1/new/microprocessor_tb.vhd:38]
+ERROR: [VRFC 10-1504] unit bench ignored due to previous errors [D:/DSD-II/proj1/project_1/project_1.srcs/sim_1/new/microprocessor_tb.vhd:21]
+INFO: [VRFC 10-240] VHDL file D:/DSD-II/proj1/project_1/project_1.srcs/sim_1/new/microprocessor_tb.vhd ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/DSD-II/proj1/project_1/project_1.sim/sim_1/behav/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'D:/DSD-II/proj1/project_1/project_1.sim/sim_1/behav/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 808.641 ; gain = 0.066
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'MIPS_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/DSD-II/proj1/project_1/project_1.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj MIPS_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/ALU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALU
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity adder
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/andN.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity andN
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/data_mem.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity data_mem
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/execute.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity execute
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/fa.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity fa
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/instr_decode.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity instr_decode
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/instr_fetch.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity instr_fetch
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/instr_mem.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity instr_mem
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/mem_stage.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mem_stage
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/project_1/project_1.srcs/sources_1/new/microprocessor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MIPS
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/multiU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity multU
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/mux.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mux
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/orN.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity orN
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/pc_reg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity pc_reg
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/register_file.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity register_file
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/ripplecarry_fa.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ripplecarry_fa
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/sllN.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sllN
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/sraN.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sraN
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/srlN.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity srlN
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/wb_stage.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity wb_stage
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/xorN.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity xorN
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/project_1/project_1.srcs/sim_1/new/microprocessor_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MIPS_tb
+ERROR: [VRFC 10-1412] syntax error near ) [D:/DSD-II/proj1/project_1/project_1.srcs/sim_1/new/microprocessor_tb.vhd:41]
+ERROR: [VRFC 10-704] formal clkin has no actual or default value [D:/DSD-II/proj1/project_1/project_1.srcs/sim_1/new/microprocessor_tb.vhd:38]
+ERROR: [VRFC 10-1504] unit bench ignored due to previous errors [D:/DSD-II/proj1/project_1/project_1.srcs/sim_1/new/microprocessor_tb.vhd:21]
+INFO: [VRFC 10-240] VHDL file D:/DSD-II/proj1/project_1/project_1.srcs/sim_1/new/microprocessor_tb.vhd ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/DSD-II/proj1/project_1/project_1.sim/sim_1/behav/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'D:/DSD-II/proj1/project_1/project_1.sim/sim_1/behav/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 812.590 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'MIPS_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/DSD-II/proj1/project_1/project_1.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj MIPS_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/ALU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALU
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity adder
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/andN.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity andN
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/data_mem.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity data_mem
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/execute.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity execute
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/fa.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity fa
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/instr_decode.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity instr_decode
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/instr_fetch.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity instr_fetch
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/instr_mem.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity instr_mem
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/mem_stage.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mem_stage
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/project_1/project_1.srcs/sources_1/new/microprocessor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MIPS
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/multiU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity multU
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/mux.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mux
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/orN.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity orN
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/pc_reg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity pc_reg
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/register_file.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity register_file
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/ripplecarry_fa.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ripplecarry_fa
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/sllN.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sllN
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/sraN.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sraN
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/srlN.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity srlN
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/wb_stage.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity wb_stage
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/xorN.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity xorN
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/project_1/project_1.srcs/sim_1/new/microprocessor_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MIPS_tb
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/DSD-II/proj1/project_1/project_1.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto bf012efcabd8415187872d9e023a8601 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot MIPS_tb_behav xil_defaultlib.MIPS_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-718] formal port <AluopCode> does not exist in entity <instr_decode>.  Please compare the definition of block <instr_decode> to its component declaration and its instantion to detect the mismatch. [D:/DSD-II/proj1/project_1/project_1.srcs/sources_1/new/microprocessor.vhd:74]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit mips_tb in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/DSD-II/proj1/project_1/project_1.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/DSD-II/proj1/project_1/project_1.sim/sim_1/behav/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 812.590 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'MIPS_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/DSD-II/proj1/project_1/project_1.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj MIPS_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/ALU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALU
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity adder
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/andN.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity andN
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/data_mem.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity data_mem
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/execute.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity execute
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/fa.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity fa
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/instr_decode.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity instr_decode
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/instr_fetch.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity instr_fetch
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/instr_mem.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity instr_mem
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/mem_stage.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mem_stage
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/project_1/project_1.srcs/sources_1/new/microprocessor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MIPS
+ERROR: [VRFC 10-719] formal port/generic <aluopcode> is not declared in <instr_decode> [D:/DSD-II/proj1/project_1/project_1.srcs/sources_1/new/microprocessor.vhd:198]
+ERROR: [VRFC 10-91] aluop is not declared [D:/DSD-II/proj1/project_1/project_1.srcs/sources_1/new/microprocessor.vhd:207]
+ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [D:/DSD-II/proj1/project_1/project_1.srcs/sources_1/new/microprocessor.vhd:24]
+INFO: [VRFC 10-240] VHDL file D:/DSD-II/proj1/project_1/project_1.srcs/sources_1/new/microprocessor.vhd ignored due to errors
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/multiU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity multU
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/mux.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mux
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/orN.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity orN
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/pc_reg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity pc_reg
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/register_file.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity register_file
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/ripplecarry_fa.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ripplecarry_fa
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/sllN.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sllN
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/sraN.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sraN
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/srlN.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity srlN
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/wb_stage.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity wb_stage
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/sources/xorN.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity xorN
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/proj1/project_1/project_1.srcs/sim_1/new/microprocessor_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MIPS_tb
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 820.332 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/DSD-II/proj1/project_1/project_1.sim/sim_1/behav/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'D:/DSD-II/proj1/project_1/project_1.sim/sim_1/behav/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 820.332 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_project
+open_project {D:/DSD-II/proj1 - Copy/project_1/project_1.xpr}
+INFO: [Project 1-313] Project file moved from 'D:/DSD-II/proj1/project_1' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 26 19:28:29 2019...

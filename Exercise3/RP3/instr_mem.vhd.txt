@@ -1,0 +1,33 @@
+-- --------------------------------------------------------------------------------
+-- Company : Rochester Institute of Technology (RIT )
+-- Engineer : Rohan Patil (rnp5285@rit.edu)
+--
+-- Create Date : 2/19/19
+-- Design Name : instr_mem
+-- Module Name : instr_mem - behavioral
+-- Project Name : ex3
+-- Target Devices : Basys3
+--
+-- Description :  memory module which holds all instructions to fetch  
+-- --------------------------------------------------------------------------------
+
+library IEEE ;
+use IEEE . STD_LOGIC_1164 .ALL ;
+use IEEE . STD_LOGIC_UNSIGNED .ALL;
+use IEEE . NUMERIC_STD .ALL;
+
+entity instr_mem is
+    port (
+            addr : in std_logic_vector(27 downto 0);
+            dout : out std_logic_vector(31 downto 0)
+    );
+end instr_mem;
+
+architecture behav of instr_mem is
+    type mem_type is array(0 to 1023) of std_logic_vector(31 downto 0); -- 2^10 size array, checking the first 10 bits of addr
+    -- arbitrary memory values
+    signal mem : mem_type := (0 => x"12345678", 1=>x"87654321", 2 => x"FFFFFFFF", 3 => x"ABCDEF01", 
+    4 => x"10FEDBCA", 5 => x"BDBDBDBD", 6 => x"82828282", others=>x"00000000"); -- initialize memory location array
+begin
+    dout <= mem(to_integer(unsigned(addr(9 downto 0))));    -- dout assigned addr idx of mem
+end behav;

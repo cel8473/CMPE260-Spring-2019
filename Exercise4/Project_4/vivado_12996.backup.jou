@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Mon Feb 25 08:56:55 2019
+# Process ID: 12996
+# Current directory: D:/DSD-II/Exercise4/Project_4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7356 D:\DSD-II\Exercise4\Project_4\Project_4.xpr
+# Log file: D:/DSD-II/Exercise4/Project_4/vivado.log
+# Journal file: D:/DSD-II/Exercise4/Project_4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/DSD-II/Exercise4/Project_4/Project_4.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source dec_tb.tcl
+config_webtalk -user on
+set_property -name {xsim.simulate.runtime} -value {300ns} -objects [get_filesets sim_1]
+relaunch_sim
+add_wave {{/dec_tb/dec/opcode}} {{/dec_tb/dec/func}} {{/dec_tb/dec/rs}} {{/dec_tb/dec/rt}} {{/dec_tb/dec/rd}} {{/dec_tb/dec/shft_amt}} {{/dec_tb/dec/immed}} {{/dec_tb/dec/address}} {{/dec_tb/dec/didnt_work}} {{/dec_tb/dec/var}} 
+run all
+close_sim

@@ -1,0 +1,29 @@
+-----------------------------------------
+-- Company: RIT
+-- Engineer: Chris Larson (cel8473@g.rit.edu)
+--
+-- Create Date: 15 Jan 2019
+-- Design Name: and
+-- Module Name: and - dataFlow
+-- Project Name: Exercise 1
+-- Target Devices: Basys3
+--
+-- Description: N- bit bitwise AND unit
+-----------------------------------------
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity AndALU is
+    GENERIC (N : INTEGER := 4); --bit width
+    PORT (
+            A : IN std_logic_vector(N-1 downto 0);
+            B : IN std_logic_vector(N-1 downto 0);
+            Y : OUT std_logic_vector(N-1 downto 0)
+           );
+end AndALU;
+
+architecture dataflow of AndALU is
+begin
+    Y <= A AND B;
+end dataflow;

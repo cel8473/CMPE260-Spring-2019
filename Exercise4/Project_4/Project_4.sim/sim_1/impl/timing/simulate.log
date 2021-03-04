@@ -1,0 +1,23 @@
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+WARNING: "C:\Xilinx\Vivado\2017.2\data/verilog/src/unisims/LDCE.v" Line 169: Timing violation in scope /dec_tb/dec/var_reg[3]/TChk169_590 at time 186935 ps $width (negedge G,(0:0:0),0,notifier) 
+WARNING: "C:\Xilinx\Vivado\2017.2\data/verilog/src/unisims/LDCE.v" Line 169: Timing violation in scope /dec_tb/dec/var_reg[4]/TChk169_590 at time 186935 ps $width (negedge G,(0:0:0),0,notifier) 
+WARNING: "C:\Xilinx\Vivado\2017.2\data/verilog/src/unisims/LDCE.v" Line 169: Timing violation in scope /dec_tb/dec/immed_reg[3]/TChk169_590 at time 186947 ps $width (negedge G,(0:0:0),0,notifier) 
+WARNING: "C:\Xilinx\Vivado\2017.2\data/verilog/src/unisims/LDCE.v" Line 169: Timing violation in scope /dec_tb/dec/immed_reg[4]/TChk169_590 at time 186947 ps $width (negedge G,(0:0:0),0,notifier) 
+WARNING: "C:\Xilinx\Vivado\2017.2\data/verilog/src/unisims/LDCE.v" Line 169: Timing violation in scope /dec_tb/dec/var_reg[0]/TChk169_590 at time 186959 ps $width (negedge G,(0:0:0),0,notifier) 
+WARNING: "C:\Xilinx\Vivado\2017.2\data/verilog/src/unisims/LDCE.v" Line 169: Timing violation in scope /dec_tb/dec/var_reg[1]/TChk169_590 at time 186959 ps $width (negedge G,(0:0:0),0,notifier) 
+WARNING: "C:\Xilinx\Vivado\2017.2\data/verilog/src/unisims/LDCE.v" Line 169: Timing violation in scope /dec_tb/dec/var_reg[2]/TChk169_590 at time 186959 ps $width (negedge G,(0:0:0),0,notifier) 
+WARNING: "C:\Xilinx\Vivado\2017.2\data/verilog/src/unisims/LDCE.v" Line 169: Timing violation in scope /dec_tb/dec/var_reg[5]/TChk169_590 at time 186965 ps $width (negedge G,(0:0:0),0,notifier) 
+WARNING: "C:\Xilinx\Vivado\2017.2\data/verilog/src/unisims/LDCE.v" Line 169: Timing violation in scope /dec_tb/dec/var_reg[6]/TChk169_590 at time 186965 ps $width (negedge G,(0:0:0),0,notifier) 
+WARNING: "C:\Xilinx\Vivado\2017.2\data/verilog/src/unisims/LDCE.v" Line 169: Timing violation in scope /dec_tb/dec/var_reg[7]/TChk169_590 at time 186965 ps $width (negedge G,(0:0:0),0,notifier) 
+WARNING: "C:\Xilinx\Vivado\2017.2\data/verilog/src/unisims/LDCE.v" Line 169: Timing violation in scope /dec_tb/dec/var_reg[8]/TChk169_590 at time 186965 ps $width (negedge G,(0:0:0),0,notifier) 
+WARNING: "C:\Xilinx\Vivado\2017.2\data/verilog/src/unisims/LDCE.v" Line 169: Timing violation in scope /dec_tb/dec/var_reg[10]/TChk169_590 at time 186970 ps $width (negedge G,(0:0:0),0,notifier) 
+WARNING: "C:\Xilinx\Vivado\2017.2\data/verilog/src/unisims/LDCE.v" Line 169: Timing violation in scope /dec_tb/dec/var_reg[9]/TChk169_590 at time 186970 ps $width (negedge G,(0:0:0),0,notifier) 
+WARNING: "C:\Xilinx\Vivado\2017.2\data/verilog/src/unisims/LDCE.v" Line 169: Timing violation in scope /dec_tb/dec/var_reg[12]/TChk169_590 at time 186971 ps $width (negedge G,(0:0:0),0,notifier) 
+WARNING: "C:\Xilinx\Vivado\2017.2\data/verilog/src/unisims/LDCE.v" Line 169: Timing violation in scope /dec_tb/dec/immed_reg[0]/TChk169_590 at time 186972 ps $width (negedge G,(0:0:0),0,notifier) 
+WARNING: "C:\Xilinx\Vivado\2017.2\data/verilog/src/unisims/LDCE.v" Line 169: Timing violation in scope /dec_tb/dec/var_reg[11]/TChk169_590 at time 186972 ps $width (negedge G,(0:0:0),0,notifier) 
+WARNING: "C:\Xilinx\Vivado\2017.2\data/verilog/src/unisims/LDCE.v" Line 169: Timing violation in scope /dec_tb/dec/var_reg[13]/TChk169_590 at time 186972 ps $width (negedge G,(0:0:0),0,notifier) 
+WARNING: "C:\Xilinx\Vivado\2017.2\data/verilog/src/unisims/LDCE.v" Line 169: Timing violation in scope /dec_tb/dec/var_reg[14]/TChk169_590 at time 186972 ps $width (negedge G,(0:0:0),0,notifier) 
+WARNING: "C:\Xilinx\Vivado\2017.2\data/verilog/src/unisims/LDCE.v" Line 169: Timing violation in scope /dec_tb/dec/immed_reg[13]/TChk169_590 at time 186973 ps $width (negedge G,(0:0:0),0,notifier) 
+WARNING: "C:\Xilinx\Vivado\2017.2\data/verilog/src/unisims/LDCE.v" Line 169: Timing violation in scope /dec_tb/dec/immed_reg[14]/TChk169_590 at time 186973 ps $width (negedge G,(0:0:0),0,notifier) 
+WARNING: "C:\Xilinx\Vivado\2017.2\data/verilog/src/unisims/LDCE.v" Line 169: Timing violation in scope /dec_tb/dec/immed_reg[15]/TC

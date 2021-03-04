@@ -1,0 +1,279 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Tue Jan 22 18:39:14 2019
+# Process ID: 8280
+# Current directory: D:/DSD-II/Exercise1/Project_1/Project_1.runs/synth_1
+# Command line: vivado.exe -log alu32.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source alu32.tcl
+# Log file: D:/DSD-II/Exercise1/Project_1/Project_1.runs/synth_1/alu32.vds
+# Journal file: D:/DSD-II/Exercise1/Project_1/Project_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source alu32.tcl -notrace
+Command: synth_design -top alu32 -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t-cpg236'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t-cpg236'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 17976 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 358.531 ; gain = 83.074
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'alu32' [D:/DSD-II/Exercise1/Project_1/Project_1.srcs/sources_1/new/alu32.vhd:38]
+	Parameter N bound to: 32 - type: integer 
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'andN' declared at 'D:/DSD-II/Exercise1/Project_1/Project_1.srcs/sources_1/new/andN.vhd:17' bound to instance 'and_comp' of component 'andN' [D:/DSD-II/Exercise1/Project_1/Project_1.srcs/sources_1/new/alu32.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'andN' [D:/DSD-II/Exercise1/Project_1/Project_1.srcs/sources_1/new/andN.vhd:26]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'andN' (1#1) [D:/DSD-II/Exercise1/Project_1/Project_1.srcs/sources_1/new/andN.vhd:26]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'orN' declared at 'D:/DSD-II/Exercise1/Project_1/Project_1.srcs/sources_1/new/orN.vhd:17' bound to instance 'or_comp' of component 'orN' [D:/DSD-II/Exercise1/Project_1/Project_1.srcs/sources_1/new/alu32.vhd:98]
+INFO: [Synth 8-638] synthesizing module 'orN' [D:/DSD-II/Exercise1/Project_1/Project_1.srcs/sources_1/new/orN.vhd:26]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'orN' (2#1) [D:/DSD-II/Exercise1/Project_1/Project_1.srcs/sources_1/new/orN.vhd:26]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'sraN' declared at 'D:/DSD-II/Exercise1/Project_1/Project_1.srcs/sources_1/new/sraN.vhd:19' bound to instance 'sra_comp' of component 'sraN' [D:/DSD-II/Exercise1/Project_1/Project_1.srcs/sources_1/new/alu32.vhd:102]
+INFO: [Synth 8-638] synthesizing module 'sraN' [D:/DSD-II/Exercise1/Project_1/Project_1.srcs/sources_1/new/sraN.vhd:28]
+	Parameter N bound to: 32 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element int_shamt_reg was removed.  [D:/DSD-II/Exercise1/Project_1/Project_1.srcs/sources_1/new/sraN.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'sraN' (3#1) [D:/DSD-II/Exercise1/Project_1/Project_1.srcs/sources_1/new/sraN.vhd:28]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'srlN' declared at 'D:/DSD-II/Exercise1/Project_1/Project_1.srcs/sources_1/new/srlN.vhd:19' bound to instance 'srl_comp' of component 'srlN' [D:/DSD-II/Exercise1/Project_1/Project_1.srcs/sources_1/new/alu32.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'srlN' [D:/DSD-II/Exercise1/Project_1/Project_1.srcs/sources_1/new/srlN.vhd:28]
+	Parameter N bound to: 32 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element int_shamt_reg was removed.  [D:/DSD-II/Exercise1/Project_1/Project_1.srcs/sources_1/new/srlN.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'srlN' (4#1) [D:/DSD-II/Exercise1/Project_1/Project_1.srcs/sources_1/new/srlN.vhd:28]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'xorN' declared at 'D:/DSD-II/Exercise1/Project_1/Project_1.srcs/sources_1/new/xorN.vhd:17' bound to instance 'xor_comp' of component 'xorN' [D:/DSD-II/Exercise1/Project_1/Project_1.srcs/sources_1/new/alu32.vhd:110]
+INFO: [Synth 8-638] synthesizing module 'xorN' [D:/DSD-II/Exercise1/Project_1/Project_1.srcs/sources_1/new/xorN.vhd:26]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'xorN' (5#1) [D:/DSD-II/Exercise1/Project_1/Project_1.srcs/sources_1/new/xorN.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'alu32' (6#1) [D:/DSD-II/Exercise1/Project_1/Project_1.srcs/sources_1/new/alu32.vhd:38]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 408.121 ; gain = 132.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 408.121 ; gain = 132.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 408.121 ; gain = 132.664
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 438.859 ; gain = 163.402
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 62    
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 32    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module alu32 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module sraN 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 31    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 32    
+Module srlN 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 31    
+Module xorN 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:28 . Memory (MB): peak = 593.332 ; gain = 317.875
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:28 . Memory (MB): peak = 593.332 ; gain = 317.875
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:28 . Memory (MB): peak = 593.332 ; gain = 317.875
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:29 . Memory (MB): peak = 593.332 ; gain = 317.875
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:29 . Memory (MB): peak = 593.332 ; gain = 317.875
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:29 . Memory (MB): peak = 593.332 ; gain = 317.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:29 . Memory (MB): peak = 593.332 ; gain = 317.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:29 . Memory (MB): peak = 593.332 ; gain = 317.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:29 . Memory (MB): peak = 593.332 ; gain = 317.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |   752|
+|2     |LUT1   |  1931|
+|3     |LUT2   |  1245|
+|4     |LUT3   |    46|
+|5     |LUT4   |     1|
+|6     |LUT5   |    31|
+|7     |LUT6   |   451|
+|8     |MUXF7  |   123|
+|9     |MUXF8  |     4|
+|10    |XORCY  |    28|
+|11    |IBUF   |    68|
+|12    |OBUF   |    32|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |  4712|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:29 . Memory (MB): peak = 593.332 ; gain = 317.875
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:29 . Memory (MB): peak = 593.332 ; gain = 317.875
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:29 . Memory (MB): peak = 593.332 ; gain = 317.875
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 848 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'alu32' is not ideal for floorplanning, since the cellview 'alu32' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 28 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 28 instances
+
+25 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:40 . Memory (MB): peak = 687.379 ; gain = 419.965
+INFO: [Common 17-1381] The checkpoint 'D:/DSD-II/Exercise1/Project_1/Project_1.runs/synth_1/alu32.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 687.379 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.158 . Memory (MB): peak = 687.379 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Jan 22 18:40:13 2019...

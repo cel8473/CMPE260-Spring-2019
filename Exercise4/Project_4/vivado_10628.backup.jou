@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Thu Feb 28 16:57:07 2019
+# Process ID: 10628
+# Current directory: D:/DSD-II/Exercise4/Project_4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3528 D:\DSD-II\Exercise4\Project_4\Project_4.xpr
+# Log file: D:/DSD-II/Exercise4/Project_4/vivado.log
+# Journal file: D:/DSD-II/Exercise4/Project_4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/DSD-II/Exercise4/Project_4/Project_4.xpr
+update_compile_order -fileset sources_1
+set_property needs_refresh false [get_runs synth_1]
+set_property needs_refresh false [get_runs impl_1]
+launch_simulation
+source dec_tb.tcl
+reset_simulation -simset sim_1 -mode post-synthesis -type timing
+reset_simulation -simset sim_1 -mode post-synthesis -type timing
+close_sim
+launch_simulation -mode post-synthesis -type timing
+source dec_tb.tcl
+launch_simulation -mode post-implementation -type timing
+source dec_tb.tcl
+close_sim
+close_sim

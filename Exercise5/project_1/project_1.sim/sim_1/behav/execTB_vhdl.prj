@@ -1,0 +1,13 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../project_1.srcs/sources_1/new/ALU.vhd"
+vhdl xil_defaultlib  "../../../project_1.srcs/sources_1/new/Adder.vhd"
+vhdl xil_defaultlib  "../../../project_1.srcs/sources_1/new/ExecuteStage.vhd"
+vhdl xil_defaultlib  "../../../project_1.srcs/sources_1/new/Rip_Car_Adder.vhd"
+vhdl xil_defaultlib  "../../../project_1.srcs/sources_1/new/SLL_ALU.vhd"
+vhdl xil_defaultlib  "../../../project_1.srcs/sources_1/new/SRA_ALU.vhd"
+vhdl xil_defaultlib  "../../../project_1.srcs/sources_1/new/SRL_ALU.vhd"
+vhdl xil_defaultlib  "../../../project_1.srcs/sources_1/new/multu.vhd"
+vhdl xil_defaultlib  "../../../project_1.srcs/sim_1/new/execTB.vhd"
+
+# Do not sort compile order
+nosort

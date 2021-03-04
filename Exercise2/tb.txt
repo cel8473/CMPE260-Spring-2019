@@ -1,0 +1,95 @@
+----------------------------------------------------------------------------------
+-- Company: 
+-- Engineer: 
+-- 
+-- Create Date: 02/12/2019 05:57:09 PM
+-- Design Name: 
+-- Module Name: tb - Behavioral
+-- Project Name: 
+-- Target Devices: 
+-- Tool Versions: 
+-- Description: 
+-- 
+-- Dependencies: 
+-- 
+-- Revision:
+-- Revision 0.01 - File Created
+-- Additional Comments:
+-- 
+----------------------------------------------------------------------------------
+
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.math_real.all;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+-- Uncomment the following library declaration if using
+-- arithmetic functions with Signed or Unsigned values
+--use IEEE.NUMERIC_STD.ALL;
+
+-- Uncomment the following library declaration if instantiating
+-- any Xilinx leaf cells in this code.
+--library UNISIM;
+--use UNISIM.VComponents.all;
+
+entity tb is
+    
+--  Port ( );
+end tb;
+
+architecture Behavioral of tb is
+    component regFile is
+        Port (
+                rd1, rd2, wr : IN std_logic_vector (2 downto 0);
+                input : IN std_logic_vector(7 downto 0);
+                clk, we, rst : IN std_logic;
+                out1, out2 : OUT std_logic_vector(7 downto 0));
+    end component;
+
+
+
+Signal rd1, rd2, wr : std_logic_vector (2 downto 0);
+Signal input : std_logic_vector (7 downto 0);
+Signal clk, we, rst : std_logic;
+Signal out1, out2: std_logic_vector (7 downto 0);
+
+
+begin
+    --Instantiate register file
+    registerFile: regFile
+    port map (rd1=>rd1, rd2=>rd2, wr=>wr, input=>input, clk=>clk, we=>we, rst=>rst, out1=>out1, out2=>out2);
+    process
+        begin
+            rst <= '1';
+            wait for 10 ns;
+            rst <= '0';
+            for i in 7 downto 0 loop
+                input <= std_logic_vector(to_unsigned(i, 8));
+                rd1 <= "000";
+                rd2 <= "000";
+                we <= '1';
+                wr <= std_logic_vector(to_unsigned(i, 3));
+                wait for 40 ns;       
+            end loop;
+            for i in 7 downto 0 loop
+                we <= '0';
+                rd1 <=std_logic_vector(to_unsigned(i, 3));
+                rd2 <= std_logic_vector(to_unsigned(i, 3));
+                wait for 10 ns;
+                assert out1 = std_logic_vector(to_unsigned(i, 7))
+                Report "Error";
+                assert out2 = std_logic_vector(to_unsigned(i, 7))
+                Report "Error";
+                wait for 30 ns;
+            end loop;
+      end process;
+      process
+        begin 
+            clk <= '0';
+            wait for 30 ns;
+            clk <= '1';
+            wait for 10 ns;
+      end process;
+end Behavioral;

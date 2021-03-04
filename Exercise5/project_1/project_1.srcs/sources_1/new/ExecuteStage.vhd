@@ -1,0 +1,72 @@
+----------------------------------------------------------------------------------
+-- Company: 
+-- Engineer: 
+-- 
+-- Create Date: 04/02/2019 06:31:44 PM
+-- Design Name: 
+-- Module Name: ExecuteStage - Behavioral
+-- Project Name: 
+-- Target Devices: 
+-- Tool Versions: 
+-- Description: 
+-- 
+-- Dependencies: 
+-- 
+-- Revision:
+-- Revision 0.01 - File Created
+-- Additional Comments:
+-- 
+----------------------------------------------------------------------------------
+
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+-- Uncomment the following library declaration if using
+-- arithmetic functions with Signed or Unsigned values
+--use IEEE.NUMERIC_STD.ALL;
+
+-- Uncomment the following library declaration if instantiating
+-- any Xilinx leaf cells in this code.
+--library UNISIM;
+--use UNISIM.VComponents.all;
+
+entity ExecuteStage is
+    GENERIC( N : INTEGER := 32);
+    Port (
+        ALUOP : in std_logic_vector(3 downto 0);
+        IdExA : in std_logic_vector(31 downto 0);
+        IdExB : in std_logic_vector(31 downto 0);
+        IdExWbIdx : in std_logic_vector(4 downto 0);
+        IdExWbEn : in std_logic;
+        IdExMemRd : in std_logic;
+        IdExMemWr : in std_logic;
+        MemWrData : out std_logic_vector(31 downto 0);
+        ALUResult : out std_logic_vector(31 downto 0);
+        ExMemWbIdx : out std_logic_vector(4 downto 0);
+        ExMemWbEn : out std_logic;
+        ExMemRd : out std_logic;
+        ExMemWr : out std_logic
+         );
+end ExecuteStage;
+
+architecture struct of ExecuteStage is
+    Component ALU is
+        GENERIC(N : INTEGER := 32);
+        Port (
+            in1 : in std_logic_vector(N-1 downto 0);
+            in2 : in std_logic_vector(N-1 downto 0);
+            control : in std_logic_vector(3 downto 0);
+            out1 : out std_logic_vector(N-1 downto 0)
+         );
+    end Component;
+begin
+    alu_comp : ALU
+        GENERIC MAP( N => N)
+        PORT MAP(in1 => IdExA, in2 => IdExB, control => ALUOP, out1 => ALUResult);
+    MemWrData <= IdExB;
+    ExMemWbIdx <= IdExWbIdx;
+    ExMemWbEn <= IdExWbEn;
+    ExMemRd <= IdExMemRd;
+    ExMemWr <= IdExMemWr;
+end struct;

@@ -1,0 +1,92 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Sun Feb 24 13:32:37 2019
+# Process ID: 8692
+# Current directory: D:/DSD-II/Exercise3/Project_3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8552 D:\DSD-II\Exercise3\Project_3\Project_3.xpr
+# Log file: D:/DSD-II/Exercise3/Project_3/vivado.log
+# Journal file: D:/DSD-II/Exercise3/Project_3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/DSD-II/Exercise3/Project_3/Project_3.xpr
+update_compile_order -fileset sources_1
+close_project
+create_project Project_4 D:/DSD-II/Exercise4/Project_4 -part xc7vx485tffg1157-1
+file mkdir D:/DSD-II/Exercise4/Project_4/Project_4.srcs/sources_1/new
+close [ open D:/DSD-II/Exercise4/Project_4/Project_4.srcs/sources_1/new/Exercise4.vhd w ]
+add_files D:/DSD-II/Exercise4/Project_4/Project_4.srcs/sources_1/new/Exercise4.vhd
+update_compile_order -fileset sources_1
+file mkdir D:/DSD-II/Exercise4/Project_4/Project_4.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/DSD-II/Exercise4/Project_4/Project_4.srcs/sim_1/new/dec_tb.vhd w ]
+add_files -fileset sim_1 D:/DSD-II/Exercise4/Project_4/Project_4.srcs/sim_1/new/dec_tb.vhd
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+launch_simulation
+move_files -fileset sim_1 [get_files  D:/DSD-II/Exercise4/Project_4/Project_4.srcs/sources_1/new/Exercise4.vhd]
+update_files -from_files D:/DSD-II/Exercise4/Project_4/Project_4.srcs/sources_1/new/instr_decode.vhd -to_files D:/DSD-II/Exercise4/Project_4/Project_4.srcs/sources_1/new/Exercise4.vhd -filesets [get_filesets *]
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+update_compile_order -fileset sim_1
+launch_simulation
+update_compile_order -fileset sim_1
+launch_simulation
+source dec_tb.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+run all
+add_files -norecurse D:/DSD-II/Exercise4/Project_4/Project_4.srcs/sources_1/new/instr_decode.vhd
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+open_run impl_1
+report_utilization -name utilization_1
+open_run synth_1 -name synth_1
+report_utilization -name utilization_1
+close_sim
+launch_simulation
+source dec_tb.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+close_sim
+launch_simulation
+launch_simulation
+source dec_tb.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+add_wave {{/dec_tb/dec}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+set_property -name {xsim.simulate.runtime} -value {140ns} -objects [get_filesets sim_1]
+relaunch_sim
+relaunch_sim
+relaunch_sim
+add_wave {{/dec_tb/dec}} 
+relaunch_sim
+relaunch_sim
+close_sim

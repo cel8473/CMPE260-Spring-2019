@@ -1,0 +1,5 @@
+Fetch is the first of two stages involved in computer processing. The processor operates by
+processing instructions in what is called the "fetch/execute cycle". The processor fetches an 
+instruction and then, depending on the instruction, executes it. Then it fetches the next 
+instruction and so on. It also increments the address by 4 bits or jump to the jump address 
+then increments

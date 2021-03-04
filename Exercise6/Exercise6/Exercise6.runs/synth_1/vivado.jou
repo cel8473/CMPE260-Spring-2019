@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Fri Apr 26 14:11:47 2019
+# Process ID: 20180
+# Current directory: F:/DSD-II/Exercise6/Exercise6/Exercise6.runs/synth_1
+# Command line: vivado.exe -log WriteBack_Stage.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source WriteBack_Stage.tcl
+# Log file: F:/DSD-II/Exercise6/Exercise6/Exercise6.runs/synth_1/WriteBack_Stage.vds
+# Journal file: F:/DSD-II/Exercise6/Exercise6/Exercise6.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source WriteBack_Stage.tcl -notrace

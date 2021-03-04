@@ -1,0 +1,50 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Mon Feb 25 17:16:36 2019
+# Process ID: 2256
+# Current directory: D:/DSD-II/Exercise4/Project_4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent584 D:\DSD-II\Exercise4\Project_4\Project_4.xpr
+# Log file: D:/DSD-II/Exercise4/Project_4/vivado.log
+# Journal file: D:/DSD-II/Exercise4/Project_4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/DSD-II/Exercise4/Project_4/Project_4.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source dec_tb.tcl
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+set_property needs_refresh false [get_runs synth_1]
+set_property needs_refresh false [get_runs impl_1]
+close_sim
+launch_simulation
+source dec_tb.tcl
+close_sim
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+source instr_decode.tcl
+close_sim
+launch_simulation
+source dec_tb.tcl
+update_compile_order -fileset sim_1
+relaunch_sim
+set_property needs_refresh false [get_runs synth_1]
+set_property needs_refresh false [get_runs impl_1]
+relaunch_sim
+set_property -name {xsim.simulate.runtime} -value {3000ns} -objects [get_filesets sim_1]
+close_sim
+launch_simulation
+source dec_tb.tcl
+run 40 ns
+run 40 ns
+run 40 ns
+close_sim

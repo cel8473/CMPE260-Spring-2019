@@ -1,0 +1,22 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/Exercise1/Project_1/Project_1.srcs/sources_1/new/andN.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity andN
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/Exercise1/Project_1/Project_1.srcs/sources_1/new/orN.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity orN
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/Exercise1/Project_1/Project_1.srcs/sources_1/new/sraN.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sraN
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/Exercise1/Project_1/Project_1.srcs/sources_1/new/srlN.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity srlN
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/Exercise1/Project_1/Project_1.srcs/sources_1/new/xorN.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity xorN
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/Exercise1/Project_1/Project_1.srcs/sources_1/new/alu32.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity alu32
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/Exercise1/Project_1/Project_1.srcs/sources_1/new/alu4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity alu4
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/Exercise1/Project_1/Project_1.srcs/sources_1/new/notN.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity notN
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/Exercise1/Project_1/Project_1.srcs/sources_1/new/sllN.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sllN
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/Exercise1/Project_1/Project_1.srcs/sim_1/new/aluTB32.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity aluTB32
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/Exercise1/Project_1/Project_1.srcs/sim_1/new/aluTB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity aluTB

@@ -1,0 +1,185 @@
+----------------------------------------------------------------------------------
+-- Company: 
+-- Engineer: 
+-- 
+-- Create Date: 03/05/2019 07:13:18 PM
+-- Design Name: 
+-- Module Name: ALU - Behavioral
+-- Project Name: 
+-- Target Devices: 
+-- Tool Versions: 
+-- Description: 
+-- 
+-- Dependencies: 
+-- 
+-- Revision:
+-- Revision 0.01 - File Created
+-- Additional Comments:
+-- 
+----------------------------------------------------------------------------------
+
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+-- Uncomment the following library declaration if using
+-- arithmetic functions with Signed or Unsigned values
+--use IEEE.NUMERIC_STD.ALL;
+
+-- Uncomment the following library declaration if instantiating
+-- any Xilinx leaf cells in this code.
+--library UNISIM;
+--use UNISIM.VComponents.all;
+
+entity ALU is
+    GENERIC(N : INTEGER := 32);
+    Port (
+        in1 : in std_logic_vector(N-1 downto 0);
+        in2 : in std_logic_vector(N-1 downto 0);
+        control : in std_logic_vector(3 downto 0);
+        out1 : out std_logic_vector(N-1 downto 0)
+     );
+end ALU;
+
+architecture struct of ALU is
+    Component AndALU is
+        GENERIC (N : INTEGER := N); --bit width
+        PORT (
+                A : IN std_logic_vector(N-1 downto 0);
+                B : IN std_logic_vector(N-1 downto 0);
+                Y : OUT std_logic_vector(N-1 downto 0)
+               );
+    end Component;
+    
+    Component Multu is
+        GENERIC( N : INTEGER := N);
+        Port (
+            A : in std_logic_vector(N/2-1 downto 0); 
+            B : in std_logic_vector(N/2-1 downto 0);
+            Prod : out std_logic_vector(N-1 downto 0)
+        );
+    end Component;
+    
+    Component OrALU is
+        GENERIC (N : INTEGER := N); --bit width
+        PORT (
+                A : IN std_logic_vector(N-1 downto 0);
+                B : IN std_logic_vector(N-1 downto 0);
+                Y : OUT std_logic_vector(N-1 downto 0)
+               );
+    end Component;
+    
+    Component Rip_Car_Adder is
+        GENERIC(N : INTEGER := N);
+        Port (
+            S : in std_logic;
+            A : in std_logic_vector(N-1 downto 0);
+            B : in std_logic_vector(N-1 downto 0);
+            Sout : out std_logic_vector(N-1 downto 0);
+            Cout : out std_logic
+         );
+    end Component;
+    
+    Component SLL_ALU is
+        GENERIC (N : INTEGER := N); --bit width
+        PORT (
+                A           : IN std_logic_vector(N-1 downto 0);
+                SHIFT_AMT   : IN std_logic_vector(N-1 downto 0);
+                Y           : OUT std_logic_vector(N-1 downto 0)
+                );
+    end Component;
+    
+    Component SRA_ALU is
+        GENERIC (N : INTEGER := N); --bit width
+        PORT (
+                A           : IN std_logic_vector(N-1 downto 0);
+                SHIFT_AMT   : IN std_logic_vector(N-1 downto 0);
+                Y           : OUT std_logic_vector(N-1 downto 0)
+                );
+    end Component;
+    
+    Component SRL_ALU is
+        GENERIC (N : INTEGER := N); --bit width
+        PORT (
+                A           : IN std_logic_vector(N-1 downto 0);
+                SHIFT_AMT   : IN std_logic_vector(N-1 downto 0);
+                Y           : OUT std_logic_vector(N-1 downto 0)
+                );
+    end Component;
+    
+    Component Xor_ALU is
+        GENERIC (N : INTEGER := N); --bit width
+        PORT (
+                A : IN std_logic_vector(N-1 downto 0);
+                B : IN std_logic_vector(N-1 downto 0);
+                Y : OUT std_logic_vector(N-1 downto 0)
+               );
+    end Component;
+    
+    signal and_result : std_logic_vector (N-1 downto 0);
+    signal mul_result : std_logic_vector (N-1 downto 0);
+    signal or_result : std_logic_vector (N-1 downto 0);
+    signal rip_add_result : std_logic_vector (N-1 downto 0);
+    signal sll_result : std_logic_vector (N-1 downto 0);
+    signal sra_result : std_logic_vector (N-1 downto 0);
+    signal srl_result : std_logic_vector (N-1 downto 0);
+    signal xor_result : std_logic_vector (N-1 downto 0);
+    signal sel_signal : std_logic;
+    signal cout_signal : std_logic;
+    signal s_signal : std_logic;
+    signal sub_result : std_logic_vector (N-1 downto 0);
+    signal twos_comp : std_logic_vector (N-1 downto 0);
+     
+begin
+    process(control)
+    begin
+        if control = "0101" then
+            s_signal <= '1';
+        else
+            s_signal <= '0';
+        end if;
+    end process;
+    and_comp : AndALU
+        GENERIC MAP ( N => N )
+        PORT MAP ( A => in1, B => in2, Y => and_result);
+    
+    mul_comp : Multu
+        PORT MAP ( A => in1(15 downto 0), B => in2(15 downto 0), PROD => mul_result);
+    
+    or_comp : OrALU
+        GENERIC MAP ( N => N )
+        PORT MAP ( A => in1, B => in2, Y => or_result);
+    
+    sub_add_comp : rip_car_adder
+        GENERIC MAP ( N => N )
+        PORT MAP (S => s_signal, A => in1, B => in2, Cout => cout_signal, Sout => rip_add_result);
+        
+    sll_comp : SLL_ALU
+        GENERIC MAP ( N => N )
+        PORT MAP ( A => in1, shift_amt => in2, Y => sll_result);
+   
+    sra_comp : SRA_ALU
+        GENERIC MAP ( N => N )
+        PORT MAP ( A => in1, shift_amt => in2, Y => sra_result);     
+    
+    srl_comp : SRL_ALU
+        GENERIC MAP ( N => N )
+        PORT MAP ( A => in1, shift_amt => in2, Y => srl_result);
+    
+    xor_comp : Xor_ALU
+        GENERIC MAP ( N => N )
+        PORT MAP ( A => in1, B => in2, Y => xor_result);
+    with control select out1 <=
+        rip_add_result when "0100",
+        and_result when "1010",
+        mul_result when "0110",
+        or_result when "1000",
+        xor_result when "1011",
+        sll_result when "1100",
+        sra_result when "1110",
+        srl_result when "1101",
+        rip_add_result+1 when "0101",
+        (others => '0') when others;
+end struct;

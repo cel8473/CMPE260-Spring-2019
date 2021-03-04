@@ -1,0 +1,95 @@
+ process(instr, func)
+        begin
+            -- R-type
+            if opcode = "000000" then 
+                Jump <= '0';
+                JumpAddr <= (others => '0');
+                MemWr <= '0';
+                MemRd <= '0';
+                RegEnWb <= '0';
+                --break for legibility
+                case func is
+                    when "100000" => ALUOp <= "0100"; --add
+                    when "100100" => ALUOp <= "1010"; --and
+                    when "011001" => ALUOp <= "0110"; --multu
+                    when "100101" => ALUOp <= "1000"; --or
+                    when "000000" => ALUOp <= "1100"; --sll
+                    when "000011" => ALUOp <= "1110"; --sra
+                    when "000010" => ALUOp <= "1101"; --srl
+                    when "100011" => ALUOp <= "0101"; --sub
+                    when "100110" => ALUOp <= "1011"; --xor
+                    when others => ALUOp <= "0000"; --wrong functions
+                end case;
+                ValA <= RegDataA;
+                ValB <= RegDataB;
+                RegIdxA <= rs;
+                RegIdxB <= rt;
+                RegIdxWb <= rd;
+            -- I-type        
+            elsif opcode = "001000" or --addi
+                    opcode = "001100" or --andi
+                    opcode = "001101" or --ori
+                    opcode = "001110" or --xori
+                    opcode = "001111" or --sw, add
+                    opcode = "100011" then --lw, add
+                        Jump <= '0';
+                        JumpAddr <= (others => '0');
+                        if immed(15) = '1' then
+                           sign_ext <= "1111111111111111" & immed; --sign extend 1
+                        else
+                           sign_ext <= "0000000000000000" & immed; --sign extend 0
+                        end if;
+                        case opcode is
+                            when "001000" => ALUOp <= "0100"; --addi
+                            when "001100" => ALUOp <= "1010"; --andi
+                            when "001101" => ALUOp <= "1000"; --ori
+                            when "001110" => ALUOp <= "1011"; --xori
+                            when "001111" => ALUOp <= "0100"; --sw, add
+                            when "100011" => ALUOp <= "0100"; --lw, add
+                            when others => ALUOp <= "0000";
+                        end case;
+                        if opcode = "001111" then --sw, add
+                            MemWr <= '1'; -- writing to mem
+                            MemRd <= '0';
+                            RegEnWb <= '0';
+                        elsif opcode = "100011" then --lw, add
+                            MemRd <= '1'; -- reading
+                            RegEnWb <= '1'; -- writing to reg
+                            MemWr <= '0';
+                        else
+                            MemWr <= '0';
+                            MemRd <= '0';
+                            RegEnWb <= '0';
+                        end if;
+                        ValA <= RegDataA;
+                        ValB <= sign_ext;
+                        RegIdxA <= rs;
+                        RegIdxB <= (others => '0');
+                        RegIdxWb <= rt;
+            elsif opcode = "000010" or
+                    opcode = "000011" then
+                        ALUOp <= (others => '0');
+                        MemWr <= '0';
+                        MemRd <= '0';
+                        RegEnWb <= '0';
+                        Jump <= '1';
+                        JumpAddr <= "00" & address;
+                        ValA <= (others => '0');
+                        ValB <= (others => '0');
+                        RegIdxA <= (others => '0');
+                        RegIdxB <= (others => '0');
+                        RegIdxWb <= (others => '0');
+            else
+                ALUOp <= (others => '0');
+                MemWr <= '0';
+                MemRd <= '0';
+                RegEnWb <= '0';   
+                Jump <= '0';
+                JumpAddr <= (others => '0');
+                ValA <= (others => '0');
+                ValB <= (others => '0');
+                RegIdxA <= (others => '0');
+                RegIdxB <= (others => '0');
+                RegIdxWb <= (others => '0');           
+            end if;
+    end process;

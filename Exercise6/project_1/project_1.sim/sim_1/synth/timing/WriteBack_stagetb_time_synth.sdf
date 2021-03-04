@@ -1,0 +1,10 @@
+(DELAYFILE 
+(SDFVERSION "3.0" )
+(DESIGN "WriteBack_stagetb")
+(DATE "Fri Apr 26 14:31:30 2019")
+(VENDOR "XILINX")
+(PROGRAM "Vivado")
+(VERSION "2017.2")
+(DIVIDER /)
+(TIMESCALE 1ps)
+)

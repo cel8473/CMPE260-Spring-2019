@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Tue Feb 19 18:08:21 2019
+# Process ID: 9580
+# Current directory: D:/DSD-II/Exercise2/Project2/Project2.runs/synth_1
+# Command line: vivado.exe -log reg_file.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source reg_file.tcl
+# Log file: D:/DSD-II/Exercise2/Project2/Project2.runs/synth_1/reg_file.vds
+# Journal file: D:/DSD-II/Exercise2/Project2/Project2.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source reg_file.tcl -notrace

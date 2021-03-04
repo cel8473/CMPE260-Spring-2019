@@ -1,0 +1,63 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
+| Date         : Thu Apr  4 18:40:31 2019
+| Host         : FSL-14 running 64-bit major release  (build 9200)
+| Command      : report_drc -file alu_drc_opted.rpt
+| Design       : alu
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Synthesized
+------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: checkpoint_alu
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 5
++--------+------------------+------------------------------------------------+------------+
+| Rule   | Severity         | Description                                    | Violations |
++--------+------------------+------------------------------------------------+------------+
+| NSTD-1 | Critical Warning | Unspecified I/O Standard                       | 1          |
+| UCIO-1 | Critical Warning | Unconstrained Logical Port                     | 1          |
+| PLIO-3 | Warning          | Placement Constraints Check for IO constraints | 3          |
++--------+------------------+------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+NSTD-1#1 Critical Warning
+Unspecified I/O Standard  
+84 out of 100 logical ports use I/O standard (IOSTANDARD) value 'DEFAULT', instead of a user assigned specific value. This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all I/O standards. This design will fail to generate a bitstream unless all logical ports have a user specified I/O standard value defined. To allow bitstream creation with unspecified I/O standard values (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks NSTD-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run. Problem ports: in1[31], in1[30], in1[29], in1[28], in1[27], in1[26], in1[25], in1[24], in1[23], in1[22], in1[21], in1[20], in1[19], in1[18], in1[17] (the first 15 of 84 listed).
+Related violations: <none>
+
+UCIO-1#1 Critical Warning
+Unconstrained Logical Port  
+84 out of 100 logical ports have no user assigned specific location constraint (LOC). This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all pin locations. This design will fail to generate a bitstream unless all logical ports have a user specified site LOC constraint defined.  To allow bitstream creation with unspecified pin locations (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks UCIO-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run.  Problem ports: in1[31], in1[30], in1[29], in1[28], in1[27], in1[26], in1[25], in1[24], in1[23], in1[22], in1[21], in1[20], in1[19], in1[18], in1[17] (the first 15 of 84 listed).
+Related violations: <none>
+
+PLIO-3#1 Warning
+Placement Constraints Check for IO constraints  
+Partially locked IO Bus is found. Following components of the IO Bus in1[31:0] are not locked:  in1[31] in1[30] in1[29] in1[28] in1[27] in1[26] in1[25] in1[24] in1[23] in1[22] in1[21] in1[20] in1[19] in1[18] in1[17] in1[16] in1[15] in1[14] in1[13] in1[12] in1[11] in1[10] in1[9] in1[8] in1[7] in1[6] in1[5] in1[4]
+Related violations: <none>
+
+PLIO-3#2 Warning
+Placement Constraints Check for IO constraints  
+Partially locked IO Bus is found. Following components of the IO Bus in2[31:0] are not locked:  in2[31] in2[30] in2[29] in2[28] in2[27] in2[26] in2[25] in2[24] in2[23] in2[22] in2[21] in2[20] in2[19] in2[18] in2[17] in2[16] in2[15] in2[14] in2[13] in2[12] in2[11] in2[10] in2[9] in2[8] in2[7] in2[6] in2[5] in2[4]
+Related violations: <none>
+
+PLIO-3#3 Warning
+Placement Constraints Check for IO constraints  
+Partially locked IO Bus is found. Following components of the IO Bus out1[31:0] are not locked:  out1[31] out1[30] out1[29] out1[28] out1[27] out1[26] out1[25] out1[24] out1[23] out1[22] out1[21] out1[20] out1[19] out1[18] out1[17] out1[16] out1[15] out1[14] out1[13] out1[12] out1[11] out1[10] out1[9] out1[8] out1[7] out1[6] out1[5] out1[4]
+Related violations: <none>
+
+

@@ -1,0 +1,12 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/Exercise2/Project2/Project2.srcs/sources_1/new/andN.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity andN
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/Exercise2/Project2/Project2.srcs/sources_1/new/decoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity decoder
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/Exercise2/Project2/Project2.srcs/sources_1/new/mux.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mux
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/Exercise2/Project2/Project2.srcs/sources_1/new/reg_file.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity reg_file
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/Exercise2/Project2/Project2.srcs/sources_1/new/reg_module.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity reg_module
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/Exercise2/Project2/Project2.srcs/sources_1/new/regTB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity regtb

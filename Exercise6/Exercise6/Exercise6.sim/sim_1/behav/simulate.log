@@ -1,0 +1,10 @@
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+Error: WbIdx FAILED in wb_stage
+Time: 0 ps  Iteration: 0  Process: /WriteBack_stagetb/line__38  File: F:/DSD-II/Exercise6/Exercise6/Exercise6.srcs/sim_1/new/WriteBack_StageTB.vhd
+Error: WbEn FAILED in wb_stage
+Time: 450 ns  Iteration: 0  Process: /WriteBack_stagetb/line__38  File: F:/DSD-II/Exercise6/Exercise6/Exercise6.srcs/sim_1/new/WriteBack_StageTB.vhd
+Error: WbEn FAILED in wb_stage
+Time: 600 ns  Iteration: 0  Process: /WriteBack_stagetb/line__38  File: F:/DSD-II/Exercise6/Exercise6/Exercise6.srcs/sim_1/new/WriteBack_StageTB.vhd
+Error: WbIdx FAILED in wb_stage
+Time: 900 ns  Iteration: 0  Process: /WriteBack_stagetb/line__38  File: F:/DSD-II/Exercise6/Exercise6/Exercise6.srcs/sim_1/new/WriteBack_StageTB.vhd

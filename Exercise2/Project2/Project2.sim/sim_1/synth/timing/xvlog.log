@@ -1,0 +1,12 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DSD-II/Exercise2/Project2/Project2.sim/sim_1/synth/timing/regtb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-311] analyzing module reg_file
+INFO: [VRFC 10-311] analyzing module reg_module
+INFO: [VRFC 10-311] analyzing module reg_module_0
+INFO: [VRFC 10-311] analyzing module reg_module_1
+INFO: [VRFC 10-311] analyzing module reg_module_2
+INFO: [VRFC 10-311] analyzing module reg_module_3
+INFO: [VRFC 10-311] analyzing module reg_module_4
+INFO: [VRFC 10-311] analyzing module reg_module_5
+INFO: [VRFC 10-311] analyzing module reg_module_6
+INFO: [VRFC 10-311] analyzing module glbl

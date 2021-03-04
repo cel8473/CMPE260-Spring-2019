@@ -1,0 +1,7 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DSD-II/Exercise1/Project_1/Project_1.sim/sim_1/impl/timing/aluTB_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu32
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/Exercise1/Project_1/Project_1.srcs/sim_1/new/aluTB32.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity aluTB32
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DSD-II/Exercise1/Project_1/Project_1.srcs/sim_1/new/aluTB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity aluTB

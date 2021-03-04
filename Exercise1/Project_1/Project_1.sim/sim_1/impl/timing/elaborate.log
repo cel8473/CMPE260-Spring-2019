@@ -1,0 +1,19 @@
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto fdd2668e040d4b18a4452ccbdcbf07d1 --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot aluTB_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.aluTB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-122] alu4 remains a black-box since it has no binding entity [D:/DSD-II/Exercise1/Project_1/Project_1.srcs/sim_1/new/aluTB.vhd:39]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.alutb
+Built simulation snapshot aluTB_time_impl

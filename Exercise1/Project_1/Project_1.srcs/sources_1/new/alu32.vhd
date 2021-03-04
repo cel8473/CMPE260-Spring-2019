@@ -1,0 +1,119 @@
+---------------------------------------------------------------------------------------------
+-- Company: RIT
+-- Engineer: Chris Larson (cel8473@g.rit.edu)
+--
+-- Create Date: 15 Jan 2019
+-- Design Name: notN
+-- Module Name: notN - dataFlow
+-- Project Name: Exercise 1
+-- Target Devices: Basys3
+--
+-- Description: N- bit logical left shift (SLL) unit
+-----------------------------------------
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+-- Uncomment the following library declaration if using
+-- arithmetic functions with Signed or Unsigned values
+--use IEEE.NUMERIC_STD.ALL;
+
+-- Uncomment the following library declaration if instantiating
+-- any Xilinx leaf cells in this code.
+--library UNISIM;
+--use UNISIM.VComponents.all;
+
+entity alu32 is
+    GENERIC (N : INTEGER := 32); --bit width
+    PORT (
+            A  : IN std_logic_vector(N-1 downto 0);
+            B  : IN std_logic_vector(N-1 downto 0);
+            OP : IN std_logic_vector(3 downto 0);
+            Y  : OUT std_logic_vector(N-1 downto 0)
+            );
+end alu32;
+
+architecture structural of alu32 is
+--Declare the and component
+    Component andN is
+                 GENERIC (N : INTEGER := 32); --bit width
+                 PORT ( 
+                         A : IN std_logic_vector(N-1 downto 0);
+                         B : IN std_logic_vector(N-1 downto 0); 
+                         Y : OUT std_logic_vector(N-1 downto 0)
+                    ); 
+              end Component;
+
+-- Declare the or component     
+     Component orN is
+                 GENERIC (N : INTEGER := 32); --bit width
+                 PORT ( 
+                         A : IN std_logic_vector(N-1 downto 0);
+                         B : IN std_logic_vector(N-1 downto 0); 
+                         Y : OUT std_logic_vector(N-1 downto 0)
+                    ); 
+              end Component;
+-- Declare the shift right arithmetic component              
+    Component sraN is
+                 GENERIC (N : INTEGER := 32); --bit width
+                 PORT (
+                         A           : IN std_logic_vector(N-1 downto 0);
+                         SHIFT_AMT   : IN std_logic_vector(N-1 downto 0);
+                         Y           : OUT std_logic_vector(N-1 downto 0)
+                    );
+              end Component;          
+-- Declare the shift right component    
+    Component srlN is
+            GENERIC (N : INTEGER := 32); --bit width
+            PORT (
+                    A           : IN std_logic_vector(N-1 downto 0);
+                    SHIFT_AMT   : IN std_logic_vector(N-1 downto 0);
+                    Y           : OUT std_logic_vector(N-1 downto 0)
+                    );
+        end Component;
+ -- Declare the xor component       
+    Component xorN is
+            GENERIC (N : INTEGER := 32); --bit width
+            PORT ( 
+                     A : IN std_logic_vector(N-1 downto 0);
+                     B : IN std_logic_vector(N-1 downto 0); 
+                     Y : OUT std_logic_vector(N-1 downto 0)
+                     ); 
+         end Component;    
+         
+    signal and_result : std_logic_vector(31 downto 0);
+    signal or_result : std_logic_vector(31 downto 0);
+    signal sra_result : std_logic_vector(31 downto 0);
+    signal srl_result : std_logic_vector(31 downto 0);
+    signal xor_result : std_logic_vector(31 downto 0);
+    
+begin
+--Instatiate the and 
+    and_comp: andN
+       generic map (N => 32)
+       port map (A => A,B => B, Y=> and_result);
+--Instantiate the or        
+    or_comp: orN
+        generic map (N => 32)
+        port map (A => A,B => B, Y=> or_result);    
+--Instantiate the SRA unit    
+    sra_comp: sraN
+            generic map (N => 32)
+            port map (A => A, SHIFT_AMT => B, Y=> sra_result);    
+--Instantiate the SRL unit              
+    srl_comp: srlN
+            generic map (N => 32)
+            port map (A => A, SHIFT_AMT => B, Y=> srl_result);
+--Instantiate the xor     
+    xor_comp: xorN
+            generic map (N => 32)
+            port map (A => A, B => B, Y=> xor_result);
+    
+   Y <= or_result when OP = "1000" else -- or
+        and_result when OP = "1010" else -- and
+        xor_result when OP = "1011" else -- and
+        srl_result when OP = "1101" else -- and
+        sra_result ; -- SLL 
+end structural;
